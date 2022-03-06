@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7c730da3e1.js"></script> 
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="edufordimg/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-----Contact us---->
+        
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7197645397127!2d3.4255832140938534!3d6.430035426028384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf57ade8cb141%3A0x175fcf2144951aa0!2sVoya%20Visa%20Limited%20(Turkey%20Visa%20Application%20Center)!5e0!3m2!1sen!2sng!4v1646016063790!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <a href=""><i class="fa fa-home"></i></a>
+                        <span>
+                            <h5>Hotel Round About , Oladele Olashore</h5>
+                            <p>Victoria Island, Lagos Nigeria</p>
+                        </span>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                        <span>
+                            <h5>+5 2123456789</h5>
+                            <p>Monday to Friday 9am to 5pm</p>
+                        </span>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                        <span>
+                            <h5>website@gmail.com</h5>
+                            <p>Send us an email</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" placeholder="Enter your email address" required>
+                        <input type="text" placeholder="Enter your subject" required>
+                        <textarea rows="8" placeholder="Message" required></textarea>
+                        <button class="hero-btn red-btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-----Footer---->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, id est aliquam obcaecati quidem fuga incidunt! At ut tempora, <br/> aspernatur soluta doloremque libero temporibus fugit autem quo similique rem. Exercitationem.</p>
+        
+            <div class="icons">
+                <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+                <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-heart"></i> by Sleam Tutorials</p>
+            <br/>
+            <p>Copyright Sleam &copy; 2019-2022</p>
+        </section>
+
+        <!-------Javascript------>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>
